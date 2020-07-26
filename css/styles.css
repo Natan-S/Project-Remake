@@ -1,0 +1,267 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+}
+
+.responsive_Properties {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+section#main_Container {
+    display: block;
+    width: 78%;
+    height: 100%;
+    float: right;
+    transition: 0.2s linear;
+}
+
+@media (min-width: 1170px) {
+    section#main_Container {
+        max-width: 1405px;
+        padding: 0;
+    }
+}
+
+header#top_Bar {
+    margin: 2px 10px;
+    display: block;
+    background-color: #ccc;
+    border-radius: 10px;
+    float: right;
+    width: 100%;
+    max-width: 100%;
+    height: 12%;
+}
+
+@media screen and (max-width: 600px) {
+    header#top_Bar {
+        margin: 2px 13px 0px 0px;
+        width: 96%;
+        height: 12%;
+    }
+}
+
+.side_Bar {
+    top: 0;
+    margin: 0px 5px;
+    display: block;
+    position: absolute;
+    float: left;
+    background-color: #333;
+    width: 20%;
+    height: 100%;
+    transition: 0.2s linear;
+    border-radius: 10px;
+}
+
+#galery-Body {
+    display: block;
+    position: relative;
+    margin: 0px 35px;
+    top: 80px;
+    width: 98%;
+    height: 85%;
+    background-image: url(../img/dashboard.png);
+    background-position: 20% 20%;
+    background-size: 88%;
+    background-repeat: no-repeat;
+}
+
+#right-content {
+        display: block;
+        position: relative;
+        float: right;
+        width: 35%;
+        height: 100%;
+        margin: -72px 0px
+}
+
+#left-content {
+    display: block;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    left: 0px;
+}
+
+#user-icon {
+    display: block;
+    float: right;
+    margin: 7px 5px;
+    width: 19%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: rgb(66, 65, 65);
+    background-image: url(../img/user.PNG);
+    background-position: 50% 50%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    border: 1px solid whitesmoke;
+    transition: 0.2s linear;
+}
+
+#text-label {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 19px;
+    left: 85px;
+    width: 45%;
+    height: 50%;
+    border: 1px solid #333;
+    border-radius: 30px;
+    transition: 0.2s linear;
+}
+
+#text-label p{
+    display: block;
+    position: relative;
+    top: -9px;
+}
+
+#user-Name {
+    margin: 0px 0px;
+}
+
+input#check {
+    display: none;
+}
+
+label#icone {
+    margin: 0% 2%;
+    top: 1.5%;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+img#icon_Search{
+    position: relative;
+    border-radius: 50%;
+    margin: 11px 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    right: 0px;
+}
+
+input#lb-Search 
+{
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px;
+    top: -32px;
+    width: 65%;
+    height: 50%;
+    background:#4f4f4f; 
+    font:12px arial, verdana, helvetica, sans-serif;   
+    border-top:8px solid #b9b7b7;
+    border-left:8px solid #b9b7b7;
+    border-right:8px solid #666; 
+    border-bottom:8px solid #666; 
+    border-collapse:collapse; 
+    color:#51e1e4da;
+    outline: none;
+    left: 0px;
+} 
+
+
+input {
+    background:#acaaaa; 
+    border:1px solid whitesmoke;
+    border-radius: 30px;
+    }  
+
+@media screen and (max-width: 380px) {
+    header#top_Bar {
+        margin: 3px 13px 0px 0px;
+        width: 94%;
+        height: 9.5%;
+    }
+
+    label#icone {
+        top: 1.5%;
+    }
+
+}
+
+img#icon {
+    margin: -4% 5%;
+    width: 14%;
+    height: 10%;
+}
+
+nav {
+    top: 60px;
+    width: 100%;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.link p{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    left: 0px;
+    top: 1px;
+    font-size: 70%;
+}
+
+.link {
+    padding: 2%;
+    margin: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-top: 5px;
+    color: whitesmoke;
+    border-radius: 30px;
+}
+
+.link:hover {
+    background: linear-gradient(to right,#caf86ed7 , #87dee0da);
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
+    img#icon {
+        margin: -5% 7%;
+        width: 14%;
+        height: 10%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    label#icone {
+        top: 0px;
+    }
+
+}
+
+#check:checked ~ .side_Bar{
+    transform: translateX(-300px);
+}
+/* Teste
+#check:checked ~ .side_Bar{
+    transform: scale(-5, 0.5);
+    transform-origin: left;
+}  */
+

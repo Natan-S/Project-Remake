@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="text/javascript" src="./js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Project Remake</title>
+</head>
+<body>
+    
+    <!-- obs: setar nos parametros do media query o width mais proximo da resolução do outro
+    exemplo: @media screen (max-width 499px); @media screen (min-width 500px) -->
+
+    <section id="main_Container" class="responsive_Properties">
+        <header id="top_Bar" class="responsive_Properties">
+            <div id="left-content">
+            <label for="lb-Search" id="icon_Search"><img id="icon_Search" src="./img/search-icon.png"></label>
+            <input type="text" name="n-Search" id="lb-Search" size="28" maxlength="40" placeholder="Pesquisar">
+            </div>
+        <div id ="right-content">
+                <div id="user-icon"></div>
+            <div id="text-label">
+                <label id="user-Name" style="font-family: 'Roboto', sans-serif;"><p>Natan Souza</p></label>
+            </div>
+        </div>
+        </header>
+
+        <div id="galery-Body">
+
+        </div>
+
+    </section>
+
+        <input type="checkbox" id="check" value="checked" onclick="mudaLargura()">
+        <label id="icone" for="check"><img src="./img/icone.png"></label>
+
+    <div class="side_Bar responsive_Properties">
+        <nav>
+            <a href=""><div class="link"><img id="icon" src="./img/home-icon.png"><p>Home</p></div></a>
+            <a href=""><div class="link"><img id="icon" src="./img/Actions-media-playback-start-icon.png"><p>Media</p></div></a>
+            <a href=""><div class="link"><img id="icon" src="./img/phone-icon.png"><p>Contact</p></div></a>
+            <a href=""><div class="link"><img id="icon" src="./img/Calendar-icon.png"><p>Events</p></div></a>
+            <a href=""><div class="link"><img id="icon" src="./img/Button-Help-icon.png"><p>About</p></div></a>
+        </nav> 
+    </div>        
+
+    
+
+</body>
+</html>
